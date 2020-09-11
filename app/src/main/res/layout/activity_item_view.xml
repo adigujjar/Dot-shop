@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemViewActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progressBarLayout"
+        android:visibility="gone"
+        >
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/item_view_layout"
+        android:background="#F2F2F4">
+        <ImageView
+            android:id="@+id/c_item_photo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:src="@drawable/items"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.08"
+            android:background="#fff"
+            android:text="scelerisque ultrices purus tellus vitae sapien"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+        <TextView
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.03"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Details"
+            android:textStyle="bold"
+            android:id="@+id/detailtxt"
+            android:textColor="#88878C"/>
+        <LinearLayout
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.033"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.13"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Make "
+                android:textColor="#88878C"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Apple "
+                android:id="@+id/maketxt"
+                android:textColor="#88878C"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Condition"
+                android:textColor="#88878C"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="New"
+                android:id="@+id/conditiontxt"
+                android:textColor="#88878C"/>
+        </LinearLayout>
+        <TextView
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="bi nec volutpat quam. Maecenas tempor urna odio, et eleifend mi porttitor eget. Proin id pharetra lacus. Donec sed sem eu velit efficitur tristique non sed metus. Quisque pretium nibh quis turpis blandit, vel imperdiet nulla blandit. Curabitur eget nisl ac metus fermentum bibendum. "
+            android:id="@+id/descriptiontxt"
+            android:textColor="#88878C"/>
+        <Button
+            android:id="@+id/add_to_cart_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".07"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorOrange"
+            android:text="Add To Cart"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

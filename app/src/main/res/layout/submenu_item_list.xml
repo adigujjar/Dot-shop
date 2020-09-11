@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#F3F3F5">
+
+    <RelativeLayout
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:padding="7dp"
+        android:background="@drawable/listbackground">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dotshop" />
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:textColor="#000"
+            android:layout_toEndOf="@+id/icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/ingre_txt"
+            android:textColor="#A0A0A0"
+            android:layout_below="@+id/item"
+            android:layout_alignStart="@+id/item"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/price_txt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:textColor="#5b5a5a"
+            android:id="@+id/price_txt"
+            android:layout_alignBottom="@+id/icon"
+            android:layout_alignStart="@+id/ingre_txt" />
+
+    </RelativeLayout>
+</LinearLayout>

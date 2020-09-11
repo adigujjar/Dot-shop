@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#F3F3F5">
+
+    <RelativeLayout
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:padding="5dp"
+        android:background="@drawable/listbackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/itemName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:textColor="#bababf"
+            android:id="@+id/itemV"
+            android:layout_below="@+id/itemName"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="00.00"
+            android:id="@+id/itemP"
+            android:layout_below="@+id/itemName"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/cartline"
+            android:id="@+id/textView9"
+            android:layout_below="@+id/itemP"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/minuBtn"
+            android:text="-"
+            android:textSize="26sp"
+            android:layout_width="34dip"
+            android:layout_height="34dip"
+            android:background="@drawable/buttonshape"
+            android:layout_below="@+id/textView9"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="1"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/nmbrTxt"
+            android:layout_alignBottom="@+id/minuBtn"
+            android:layout_toEndOf="@+id/minuBtn" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:text="+"
+            android:textSize="24sp"
+            android:layout_width="34dip"
+            android:layout_height="34dip"
+            android:background="@drawable/buttonshape"
+            android:layout_below="@+id/textView9"
+            android:layout_toEndOf="@+id/nmbrTxt" />
+
+        <ImageButton
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:id="@+id/trashBtn"
+            android:src="@drawable/trash"
+            android:layout_below="@+id/textView9"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:text="PKR "
+            android:id="@+id/textView13"
+            android:layout_toLeftOf="@id/itemP"
+            android:layout_alignTop="@+id/itemP"
+            android:layout_toStartOf="@+id/itemP" />
+    </RelativeLayout>
+</LinearLayout>
